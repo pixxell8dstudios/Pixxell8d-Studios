@@ -4,8 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pixxell8d Studios</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="p8s.png" type="image/png">
+
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
   <style>
     /* Global Styles */
     body {
@@ -20,8 +25,16 @@
     header {
       text-align: center;
       padding: 80px 20px;
-      background: #4CAF50;
+      background: #FF5733;
       color: #fff;
+    }
+
+    /* Logo styling */
+    header img {
+      display: block;
+      margin: 0 auto 20px auto; /* centers image and adds spacing below */
+      width: 150px; /* adjust size as needed */
+      height: auto;
     }
 
     header h1 {
@@ -39,7 +52,6 @@
       text-align: center;
     }
 
-    /* Reduce bottom padding for services and top padding for contact */
     #services {
       padding-bottom: 30px;
     }
@@ -53,7 +65,6 @@
       margin-bottom: 30px;
     }
 
-    /* Service Cards */
     .cards {
       display: flex;
       flex-wrap: wrap;
@@ -75,7 +86,6 @@
       transform: translateY(-5px);
     }
 
-    /* Contact Section */
     .email-link {
       display: inline-block;
       margin-top: 15px;
@@ -106,6 +116,7 @@
 <body>
   <!-- Header -->
   <header>
+    <img src="p8s.png" alt="Pixxell8d Studios Logo">
     <h1>Pixxell8d Studios</h1>
     <p>Video Editing Services</p>
   </header>
