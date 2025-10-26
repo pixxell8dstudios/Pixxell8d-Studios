@@ -4,20 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pixxell8d Studios</title>
-
   <!-- Favicon -->
   <link rel="icon" href="p8s.png" type="image/png">
-
 <!-- FaviconUpgrades -->
 <link rel="icon" type="image/png" sizes="32x32" href="p8s.png">
 <link rel="icon" type="image/png" sizes="16x16" href="p8s.png">
-
 <!-- FaviconForOpera -->
 <link rel="icon" type="image/png" sizes="32x32" href="p8s.png?v=2">
 <link rel="icon" type="image/png" sizes="16x16" href="p8s.png?v=2">
-
-
-
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   
@@ -31,14 +25,24 @@
       color: #333;
       line-height: 1.6;
     }
-
     header {
+      position: relative;
       text-align: center;
       padding: 80px 20px;
       background: #FF5733;
       color: #fff;
     }
-
+    /* Pricing link in top right */
+    .pricing-link {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-family: 'Roboto', sans-serif;
+      color: #fff;
+      text-decoration: underline;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
     /* Logo styling */
     header img {
       display: block;
@@ -46,42 +50,34 @@
       width: 150px; /* adjust size as needed */
       height: auto;
     }
-
     header h1 {
       font-size: 2.5rem;
       margin: 0;
     }
-
     header p {
       font-size: 1.2rem;
       margin-top: 10px;
     }
-
     section {
       padding: 60px 20px;
       text-align: center;
     }
-
     #services {
       padding-bottom: 30px;
     }
-
     #contact {
       padding-top: 30px;
     }
-
     section h2 {
       font-size: 2rem;
       margin-bottom: 30px;
     }
-
     .cards {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
     }
-
     .card {
       background: #fff;
       padding: 25px 20px;
@@ -91,11 +87,9 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       transition: transform 0.2s;
     }
-
     .card:hover {
       transform: translateY(-5px);
     }
-
     .email-link {
       display: inline-block;
       margin-top: 15px;
@@ -103,22 +97,24 @@
       color: #4CAF50;
       text-decoration: none;
     }
-
     .email-link:hover {
       text-decoration: underline;
     }
-
     footer {
       text-align: center;
       padding: 20px;
       background: #eee;
       color: #555;
     }
-
     @media(max-width: 600px){
       .cards {
         flex-direction: column;
         gap: 15px;
+      }
+      .pricing-link {
+        top: 10px;
+        right: 10px;
+        font-size: 0.9rem;
       }
     }
   </style>
@@ -126,11 +122,11 @@
 <body>
   <!-- Header -->
   <header>
+    <a href="https://pixxell8dstudios.netlify.app/pricing" class="pricing-link">Pricing</a>
     <img src="p8s.png" alt="Pixxell8d Studios Logo">
     <h1>Pixxell8d Studios</h1>
-    <p>Video Editing Services</p>
+    <p>Video/Image Editing & Photography Services</p>
   </header>
-
   <!-- Services Section -->
   <section id="services">
     <h2>Services</h2>
@@ -138,23 +134,22 @@
       <div class="card">Ad/Promo Editing And Compilation</div>
       <div class="card">YouTube Long-Form Content Editing & Compilation</div>
       <div class="card">TikTok/Instagram Short-Form Editing & Compilation</div>
+<div class="card">Photography</div>
+<div class="card">Image Editing & Collages</div>
     </div>
-
     <!-- About Section Under Services -->
     <h2>About</h2>
-    <p>I edit and put together videos for clients. Contact me for projects.</p>
+    <p>I edit and put together videos for clients. I also do photography. Contact me for projects.</p>
   </section>
-
   <!-- Contact Section -->
   <section id="contact">
-    <h2>Pricing & Contact</h2>
-    <p>Pricing:<br>Short Videos (under 1 min): $5.<br>Longer Content: Price depends on length ($5 for the video and every FULL minute costs $3)<br>I require half the cost upfront and the other half upon completion.</p>
+    <h2>Contact Me</h2>
+   <a href="https://www.instagram.com/pixxell8dstudio">My Instagram Portfolio</a>
+<br>
     <a href="mailto:huekgfhceukjfghcueryj@gmail.com" class="email-link">huekgfhceukjfghcueryj@gmail.com</a>
   </section>
-
   <footer>
     <p>&copy; 2025 Pixxell8d Studios</p>
   </footer>
 </body>
 </html>
-
